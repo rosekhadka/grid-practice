@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+    margin: 10px 10px 0 10px;
+    height: 98vh;
+    grid-template-areas: "nav    nav    nav    nav nav nav nav  nav"
+                        "slogan slogan slogan pic pic  pic  ply ply"
+                        "slogan slogan slogan pic pic  pic  ply ply"
+                        "slogan slogan slogan pic pic  pic  ply ply"
+                        "slogan slogan slogan pic pic  pic  ply ply"
+                        "info   info   cont  cont cont cont  ply ply"
+                        "info   info   cont  cont cont cont ply ply"
+                        "info   info   cont  cont cont cont link link";
+}
+.container1 {
+    grid-area: nav;
+    background-color: orange;
+}
+.container2 {
+    grid-area: slogan;
+    background-color: lightblue;
+}
+.container3 {
+    grid-area: pic;
+    background-color: blueviolet;
+}
+.container4 {
+    grid-area: ply;
+    background-color: lightgreen;
+}
+.container5 {
+    grid-area: info;
+    background-color: brown;
+}
+.container6 {
+    grid-area: cont;
+    background-color:deeppink;
+}
+.container7 {
+    grid-area: link;
+    background-color: darkgoldenrod;
+}
